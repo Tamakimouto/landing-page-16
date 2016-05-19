@@ -1,0 +1,210 @@
+@font-face {
+    font-family: rune;
+    src: url(../font/moonrunes.ttf);
+}
+
+#bg {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    z-index: -1;
+    position: fixed;
+    display: block;
+    pointer-events: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#main {
+    margin-left: 20%;
+    text-align: center;
+    display: block;
+    width: auto;
+    margin-top: 5%;
+    font-family: rune;
+}
+
+#header {
+    pointer-events: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.navbar p {
+    display: inline-block;
+    font-size: 30px;
+    color: #1D160E;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.navbar > * {
+    vertical-align: top;
+}
+
+.school,
+.yonchan,
+.anime,
+.work {
+    display: inline-block;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.navbar p:hover {
+    cursor: pointer;
+}
+
+.edu,
+.boards,
+.anilinks,
+.workplaces {
+    display: none;
+}
+
+.edu > p,
+.boards > p,
+.anilinks > p,
+.workplaces > p {
+    display: block;
+    font-size: 20px;
+}
+
+.edu > a,
+.boards > a,
+.anilinks > a,
+.workplaces > a {
+    display: block;
+    font-size: 20px;
+}
+
+.school:hover,
+.yonchan:hover,
+.anime:hover,
+.work:hover {
+    alpha: 0;
+}
+
+.school:hover .edu {
+    display: block;
+}
+
+.yonchan:hover .boards {
+    display: block;
+}
+
+.anime:hover .anilinks {
+    display: block;
+}
+
+.work:hover .workplaces {
+    display: block;
+}
+
+.school:hover #subcat,
+.yonchan:hover #subcat,
+.anime:hover #subcat,
+.work:hover #subcat {
+    opacity: 0.5;
+}
+
+.link:hover p {
+    opacity: 0.3;
+}
+
+.search {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.search p {
+    font-size: 25px;
+}
+
+.searchForm {
+    display: inline-block;
+}
+
+.searchBar::-webkit-input-placeholder {
+    transition: color 1s;
+}
+
+.searchBar {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 16px;
+    color: red;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: right center;
+    background-image: url("../img/stmp.png");
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+    border-style: solid;
+    outline: 0;
+    transition: all 1s;
+}
+
+.searchBar:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    background-position: right center;
+    opacity: 1;
+}
+
+.searchBar:focus {
+    cursor: text;
+    width: 100px;
+    padding-right: 45px;
+    opacity: 1;
+}
+
+#epitaph {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 15pt;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#youtube {
+    padding-right: 5%;
+}
+
+#uguu {
+    padding-left: 5%;
+}
